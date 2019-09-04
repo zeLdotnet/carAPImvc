@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+@model IEnumerable<Car>
+<h1>Car List</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Year</th>
+        <th>Color</th>
+    </tr>
+
+    @foreach (var car in Model)
+    {
+        <tr>
+            <td>@car.Make</td>
+            <td>@car.Model</td>
+            <td>@car.MYear</td>
+            <td>@car.Color</td>
+        </tr>
+
+    }
+</table>

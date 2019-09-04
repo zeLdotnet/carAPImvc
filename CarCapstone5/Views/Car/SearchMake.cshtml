@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "SearchMake";
+}
+@model List<Car>
+<h1>SearchMake</h1>
+
+<table class="table">
+    <tr>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Year</th>
+        <th>Color</th>
+    </tr>
+    @foreach (var car in Model)
+    {
+        <tr>
+            <td>@car.Make</td>
+            <td>@car.Model</td>
+            <td>@car.MYear</td>
+            <td>@car.Color</td>
+        </tr>
+    }
+
+</table>
